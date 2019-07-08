@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1E6492188C98E138BE4E5F5789943691 /* Pods-WTTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF0830830FEABC1745A58FBFBF40E0C /* Pods-WTTextField_Tests-dummy.m */; };
+		4A18EB130D3D7D7394039B8E9721A454 /* WTTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC990944466863D106D86EFD3103C27 /* WTTextField-dummy.m */; };
 		7037AAAF87E04BDDBD5E7DB7B00D0B25 /* Pods-WTTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC1F814639156CE3B2CC536159F4675 /* Pods-WTTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75B528CB2EA1F30188C9E218C8E32973 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		7F62AE5022D396F00046D117 /* WTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62AE4F22D396F00046D117 /* WTTextField.swift */; };
-		7F62AE5122D396F00046D117 /* WTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62AE4F22D396F00046D117 /* WTTextField.swift */; };
 		9FE4F0EE50EAB90AA801A18B8591914F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		A287C0B3B8BF1D07D99646F45ECBE2D7 /* WTTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D7CEB4683E4A74760DCA951F58B040A /* WTTextField-dummy.m */; };
-		C52AB12BC74745D6980B4ABB041C42AB /* WTTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCE59658B9990436E7D488FF0FDE0A57 /* WTTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C52AB12BC74745D6980B4ABB041C42AB /* WTTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 076024F3F9B5064729BFF74D42AD3673 /* WTTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1C8FCA54030D6D67E23B4C54BF80ED6 /* WTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CBB66BBD607190E8018DFD0B18EC94 /* WTTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,28 +27,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D7CEB4683E4A74760DCA951F58B040A /* WTTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTTextField-dummy.m"; sourceTree = "<group>"; };
+		025C55D4347377CCAE333C59E5096B39 /* WTTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WTTextField.modulemap; sourceTree = "<group>"; };
+		076024F3F9B5064729BFF74D42AD3673 /* WTTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTTextField-umbrella.h"; sourceTree = "<group>"; };
+		0D5EFCF04C6A9B49A5AD8D4194422A34 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		13D81452A5DECF67029D205848ACB611 /* Pods-WTTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WTTextField_Tests.modulemap"; sourceTree = "<group>"; };
 		23E5778CC29BEA3BC27B1F6C3E17E798 /* Pods-WTTextField_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WTTextField_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		29A90246A393FA07B54A98E2D8DD4A95 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2CF0830830FEABC1745A58FBFBF40E0C /* Pods-WTTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WTTextField_Tests-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		42A0BEB0DA870C9A482883E1EF4D9F94 /* WTTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTTextField-prefix.pch"; sourceTree = "<group>"; };
+		3CB2AFBC915DB10A4AAFD1BE49B25C1B /* WTTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WTTextField.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3FC990944466863D106D86EFD3103C27 /* WTTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTTextField-dummy.m"; sourceTree = "<group>"; };
+		430D37C249364B908CA4AD8A5CB83A08 /* WTTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTTextField.xcconfig; sourceTree = "<group>"; };
 		48C79913A505514076839C7DAFC82F3E /* Pods-WTTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WTTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4E717736160C218B1F12B6452FCF8C31 /* WTTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTTextField.xcconfig; sourceTree = "<group>"; };
+		49CBB66BBD607190E8018DFD0B18EC94 /* WTTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WTTextField.swift; path = WTTextField/Classes/WTTextField.swift; sourceTree = "<group>"; };
+		4EC3CDF419F51BF1FA374AC98859BB33 /* WTTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WTTextField-Info.plist"; sourceTree = "<group>"; };
+		569AB591DCBAEFFB69A849FF140556D0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		5AC1F814639156CE3B2CC536159F4675 /* Pods-WTTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WTTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7CBD1728306EA586423870EA96FE795C /* WTTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WTTextField-Info.plist"; sourceTree = "<group>"; };
-		7F62AE4F22D396F00046D117 /* WTTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WTTextField.swift; path = WTTextField/Classes/WTTextField.swift; sourceTree = "<group>"; };
-		810C3D7D8D67B7F2A60D80869E567874 /* WTTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WTTextField.modulemap; sourceTree = "<group>"; };
-		831DB4FE7FB6F6D33F1AE0D99F407BD1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0B7C067B91492FA680FAA9A59A673E5 /* Pods_WTTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0B7C067B91492FA680FAA9A59A673E5 /* Pods_WTTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WTTextField_Tests.framework; path = "Pods-WTTextField_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FE3BD1B582A13874517A128C4E0428 /* Pods-WTTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C51EEEDD1E88ED49A8EAA387515BF0E8 /* WTTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTTextField-prefix.pch"; sourceTree = "<group>"; };
 		C6391F63EE62D4751F76CCFD4496B390 /* Pods-WTTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CCE59658B9990436E7D488FF0FDE0A57 /* WTTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTTextField-umbrella.h"; sourceTree = "<group>"; };
-		D6757A6ABA00A193507F3972376FC842 /* WTTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6757A6ABA00A193507F3972376FC842 /* WTTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTTextField.framework; path = WTTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E064149EDFCF6B4E0D7D55DA57307EA1 /* Pods-WTTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WTTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E5E92D193D4E1602E8A18E243316D849 /* WTTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WTTextField.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E797551146F8CC8F101E3FC36B62D150 /* Pods-WTTextField_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WTTextField_Tests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,22 +72,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E51F6B6FC50C2BA39BA7DCA3EF809D5 /* WTTextField */ = {
+			isa = PBXGroup;
+			children = (
+				49CBB66BBD607190E8018DFD0B18EC94 /* WTTextField.swift */,
+				9BA439F5F5DD5C3BF50DDEF1CB3380C2 /* Pod */,
+				81D008CA88BF30939F7B2417C0ED7B6A /* Support Files */,
+			);
+			name = WTTextField;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		4FF5BDED0A0677F93BBD0C4929B0576B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AD0D33026B035BBA4170181F8E1D2CE5 /* WTTextField */,
+				1E51F6B6FC50C2BA39BA7DCA3EF809D5 /* WTTextField */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		774971A97B02D77F48402FFF8438FA27 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				29A90246A393FA07B54A98E2D8DD4A95 /* LICENSE */,
-				831DB4FE7FB6F6D33F1AE0D99F407BD1 /* README.md */,
-				E5E92D193D4E1602E8A18E243316D849 /* WTTextField.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		7BAC27DBA2FC957E7BCE3A7843791FC1 /* Targets Support Files */ = {
@@ -99,29 +99,28 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A8F44C6C01B36AB3AD45DAD6EC855969 /* Support Files */ = {
+		81D008CA88BF30939F7B2417C0ED7B6A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				810C3D7D8D67B7F2A60D80869E567874 /* WTTextField.modulemap */,
-				4E717736160C218B1F12B6452FCF8C31 /* WTTextField.xcconfig */,
-				0D7CEB4683E4A74760DCA951F58B040A /* WTTextField-dummy.m */,
-				7CBD1728306EA586423870EA96FE795C /* WTTextField-Info.plist */,
-				42A0BEB0DA870C9A482883E1EF4D9F94 /* WTTextField-prefix.pch */,
-				CCE59658B9990436E7D488FF0FDE0A57 /* WTTextField-umbrella.h */,
+				025C55D4347377CCAE333C59E5096B39 /* WTTextField.modulemap */,
+				430D37C249364B908CA4AD8A5CB83A08 /* WTTextField.xcconfig */,
+				3FC990944466863D106D86EFD3103C27 /* WTTextField-dummy.m */,
+				4EC3CDF419F51BF1FA374AC98859BB33 /* WTTextField-Info.plist */,
+				C51EEEDD1E88ED49A8EAA387515BF0E8 /* WTTextField-prefix.pch */,
+				076024F3F9B5064729BFF74D42AD3673 /* WTTextField-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/WTTextField";
 			sourceTree = "<group>";
 		};
-		AD0D33026B035BBA4170181F8E1D2CE5 /* WTTextField */ = {
+		9BA439F5F5DD5C3BF50DDEF1CB3380C2 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				7F62AE4F22D396F00046D117 /* WTTextField.swift */,
-				774971A97B02D77F48402FFF8438FA27 /* Pod */,
-				A8F44C6C01B36AB3AD45DAD6EC855969 /* Support Files */,
+				569AB591DCBAEFFB69A849FF140556D0 /* LICENSE */,
+				0D5EFCF04C6A9B49A5AD8D4194422A34 /* README.md */,
+				3CB2AFBC915DB10A4AAFD1BE49B25C1B /* WTTextField.podspec */,
 			);
-			name = WTTextField;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -223,7 +222,7 @@
 			buildConfigurationList = 61CE9C002E5E5FA4F404B922F4715C07 /* Build configuration list for PBXNativeTarget "WTTextField" */;
 			buildPhases = (
 				2848F07911706244A8EF734060411F67 /* Headers */,
-				1FBDD454915E538A7A632F493DFDD558 /* Sources */,
+				C6A69BA83408655E397EE1B172E47FC3 /* Sources */,
 				8E3643D2C675A1B1254CDD1F7BB55E40 /* Frameworks */,
 				47406C7FB2D1A3A3158D9CA3B1BA17A8 /* Resources */,
 			);
@@ -244,14 +243,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				TargetAttributes = {
-					548228CA3D29D08007ADB2A98B2A1EBF = {
-						LastSwiftMigration = 1020;
-					};
-					86DF64A340CD3C8632EF9AA34AE5F7DD = {
-						LastSwiftMigration = 1020;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -293,17 +284,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F62AE5022D396F00046D117 /* WTTextField.swift in Sources */,
 				1E6492188C98E138BE4E5F5789943691 /* Pods-WTTextField_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1FBDD454915E538A7A632F493DFDD558 /* Sources */ = {
+		C6A69BA83408655E397EE1B172E47FC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F62AE5122D396F00046D117 /* WTTextField.swift in Sources */,
-				A287C0B3B8BF1D07D99646F45ECBE2D7 /* WTTextField-dummy.m in Sources */,
+				4A18EB130D3D7D7394039B8E9721A454 /* WTTextField-dummy.m in Sources */,
+				E1C8FCA54030D6D67E23B4C54BF80ED6 /* WTTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,11 +309,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A3C4C3E6D370C8DEC7A4ED57DE43B400 /* Release */ = {
+		0340CE9D22177ECB3B25830180F6427D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E717736160C218B1F12B6452FCF8C31 /* WTTextField.xcconfig */;
+			baseConfigurationReference = 430D37C249364B908CA4AD8A5CB83A08 /* WTTextField.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -405,7 +394,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -480,7 +470,6 @@
 			baseConfigurationReference = C0FE3BD1B582A13874517A128C4E0428 /* Pods-WTTextField_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -503,55 +492,16 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		FD6E52B6E0008EFB512A5CD4768BDA3D /* Release */ = {
+		EFB67CDFA77D030E357C49BF73A66207 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6391F63EE62D4751F76CCFD4496B390 /* Pods-WTTextField_Tests.release.xcconfig */;
+			baseConfigurationReference = 430D37C249364B908CA4AD8A5CB83A08 /* WTTextField.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WTTextField_Tests/Pods-WTTextField_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WTTextField_Tests/Pods-WTTextField_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FFE505A9CC734A9F25820FCB1FE4024B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E717736160C218B1F12B6452FCF8C31 /* WTTextField.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -572,13 +522,46 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		FD6E52B6E0008EFB512A5CD4768BDA3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6391F63EE62D4751F76CCFD4496B390 /* Pods-WTTextField_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WTTextField_Tests/Pods-WTTextField_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WTTextField_Tests/Pods-WTTextField_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -595,8 +578,8 @@
 		61CE9C002E5E5FA4F404B922F4715C07 /* Build configuration list for PBXNativeTarget "WTTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FFE505A9CC734A9F25820FCB1FE4024B /* Debug */,
-				A3C4C3E6D370C8DEC7A4ED57DE43B400 /* Release */,
+				EFB67CDFA77D030E357C49BF73A66207 /* Debug */,
+				0340CE9D22177ECB3B25830180F6427D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

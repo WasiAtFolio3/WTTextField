@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WTTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQ2-Dr-ewm" customClass="WTTextField" customModule="WTTextField" customModuleProvider="target">
+                                <rect key="frame" x="63" y="100" width="288" height="70"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="X7o-Bs-Csb"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLw-KE-eXe">
+                                <rect key="frame" x="169" y="763" width="76" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3RD-BH-mG3"/>
+                                    <constraint firstAttribute="width" constant="76" id="Jun-4i-dNC"/>
+                                </constraints>
+                                <state key="normal" title="Show Error"/>
+                                <connections>
+                                    <action selector="showError:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rhL-7c-GI8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ht4-mJ-yxq">
+                                <rect key="frame" x="172" y="832" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="07j-Ec-0bZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="M35-N3-URl"/>
+                                </constraints>
+                                <state key="normal" title="Hide Error"/>
+                                <connections>
+                                    <action selector="hideError:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uk7-li-yLA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nLw-KE-eXe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HgD-2m-dRH"/>
+                            <constraint firstItem="Ht4-mJ-yxq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IAt-zG-10G"/>
+                            <constraint firstItem="DQ2-Dr-ewm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="fKH-Pp-S4g"/>
+                            <constraint firstItem="Ht4-mJ-yxq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hqk-wN-6gB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DQ2-Dr-ewm" secondAttribute="trailing" constant="63" id="njo-Oh-kYq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nLw-KE-eXe" secondAttribute="bottom" constant="69" id="pCM-Bx-ua0"/>
+                            <constraint firstItem="DQ2-Dr-ewm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="tY5-oP-May"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="DQ2-Dr-ewm" id="pek-J6-uZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
+        </scene>
+    </scenes>
+</document>
