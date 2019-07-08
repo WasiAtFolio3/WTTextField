@@ -11,9 +11,12 @@
 		4A18EB130D3D7D7394039B8E9721A454 /* WTTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC990944466863D106D86EFD3103C27 /* WTTextField-dummy.m */; };
 		7037AAAF87E04BDDBD5E7DB7B00D0B25 /* Pods-WTTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC1F814639156CE3B2CC536159F4675 /* Pods-WTTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75B528CB2EA1F30188C9E218C8E32973 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7F62AE8B22D3ADDF0046D117 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 7F62AE8922D3ADDF0046D117 /* .gitkeep */; };
+		7F62AE8C22D3ADDF0046D117 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 7F62AE8922D3ADDF0046D117 /* .gitkeep */; };
+		7F62AE8D22D3ADDF0046D117 /* WTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62AE8A22D3ADDF0046D117 /* WTTextField.swift */; };
+		7F62AE8E22D3ADDF0046D117 /* WTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62AE8A22D3ADDF0046D117 /* WTTextField.swift */; };
 		9FE4F0EE50EAB90AA801A18B8591914F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		C52AB12BC74745D6980B4ABB041C42AB /* WTTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 076024F3F9B5064729BFF74D42AD3673 /* WTTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1C8FCA54030D6D67E23B4C54BF80ED6 /* WTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CBB66BBD607190E8018DFD0B18EC94 /* WTTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,25 +32,26 @@
 /* Begin PBXFileReference section */
 		025C55D4347377CCAE333C59E5096B39 /* WTTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WTTextField.modulemap; sourceTree = "<group>"; };
 		076024F3F9B5064729BFF74D42AD3673 /* WTTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTTextField-umbrella.h"; sourceTree = "<group>"; };
-		0D5EFCF04C6A9B49A5AD8D4194422A34 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0D5EFCF04C6A9B49A5AD8D4194422A34 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		13D81452A5DECF67029D205848ACB611 /* Pods-WTTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WTTextField_Tests.modulemap"; sourceTree = "<group>"; };
 		23E5778CC29BEA3BC27B1F6C3E17E798 /* Pods-WTTextField_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WTTextField_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		2CF0830830FEABC1745A58FBFBF40E0C /* Pods-WTTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WTTextField_Tests-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3CB2AFBC915DB10A4AAFD1BE49B25C1B /* WTTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WTTextField.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3CB2AFBC915DB10A4AAFD1BE49B25C1B /* WTTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WTTextField.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3FC990944466863D106D86EFD3103C27 /* WTTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTTextField-dummy.m"; sourceTree = "<group>"; };
 		430D37C249364B908CA4AD8A5CB83A08 /* WTTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTTextField.xcconfig; sourceTree = "<group>"; };
 		48C79913A505514076839C7DAFC82F3E /* Pods-WTTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WTTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		49CBB66BBD607190E8018DFD0B18EC94 /* WTTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WTTextField.swift; path = WTTextField/Classes/WTTextField.swift; sourceTree = "<group>"; };
 		4EC3CDF419F51BF1FA374AC98859BB33 /* WTTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WTTextField-Info.plist"; sourceTree = "<group>"; };
-		569AB591DCBAEFFB69A849FF140556D0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		569AB591DCBAEFFB69A849FF140556D0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5AC1F814639156CE3B2CC536159F4675 /* Pods-WTTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WTTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0B7C067B91492FA680FAA9A59A673E5 /* Pods_WTTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WTTextField_Tests.framework; path = "Pods-WTTextField_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F62AE8922D3ADDF0046D117 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		7F62AE8A22D3ADDF0046D117 /* WTTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTTextField.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0B7C067B91492FA680FAA9A59A673E5 /* Pods_WTTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FE3BD1B582A13874517A128C4E0428 /* Pods-WTTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C51EEEDD1E88ED49A8EAA387515BF0E8 /* WTTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTTextField-prefix.pch"; sourceTree = "<group>"; };
 		C6391F63EE62D4751F76CCFD4496B390 /* Pods-WTTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D6757A6ABA00A193507F3972376FC842 /* WTTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WTTextField.framework; path = WTTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6757A6ABA00A193507F3972376FC842 /* WTTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WTTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E064149EDFCF6B4E0D7D55DA57307EA1 /* Pods-WTTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WTTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E797551146F8CC8F101E3FC36B62D150 /* Pods-WTTextField_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WTTextField_Tests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,7 +79,7 @@
 		1E51F6B6FC50C2BA39BA7DCA3EF809D5 /* WTTextField */ = {
 			isa = PBXGroup;
 			children = (
-				49CBB66BBD607190E8018DFD0B18EC94 /* WTTextField.swift */,
+				7F62AE8822D3ADDF0046D117 /* Classes */,
 				9BA439F5F5DD5C3BF50DDEF1CB3380C2 /* Pod */,
 				81D008CA88BF30939F7B2417C0ED7B6A /* Support Files */,
 			);
@@ -97,6 +101,16 @@
 				E479B2489FB925BDC40B0C60F946460B /* Pods-WTTextField_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7F62AE8822D3ADDF0046D117 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7F62AE8922D3ADDF0046D117 /* .gitkeep */,
+				7F62AE8A22D3ADDF0046D117 /* WTTextField.swift */,
+			);
+			name = Classes;
+			path = WTTextField/Classes;
 			sourceTree = "<group>";
 		};
 		81D008CA88BF30939F7B2417C0ED7B6A /* Support Files */ = {
@@ -267,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F62AE8B22D3ADDF0046D117 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F62AE8C22D3ADDF0046D117 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F62AE8D22D3ADDF0046D117 /* WTTextField.swift in Sources */,
 				1E6492188C98E138BE4E5F5789943691 /* Pods-WTTextField_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,8 +309,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F62AE8E22D3ADDF0046D117 /* WTTextField.swift in Sources */,
 				4A18EB130D3D7D7394039B8E9721A454 /* WTTextField-dummy.m in Sources */,
-				E1C8FCA54030D6D67E23B4C54BF80ED6 /* WTTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,8 +411,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
