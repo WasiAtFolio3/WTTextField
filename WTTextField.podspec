@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-
+  s.swift_version    = '4.0'
   s.source_files = 'WTTextField/WTTextField/Classes/**/*'
   
   # s.resource_bundles = {
