@@ -1,0 +1,6 @@
+framework module Pods_WTTextField_Tests {
+  umbrella header "Pods-WTTextField_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

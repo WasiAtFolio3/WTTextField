@@ -1,0 +1,16 @@
+PODS:
+  - WTTextField (0.1.0)
+
+DEPENDENCIES:
+  - WTTextField (from `../`)
+
+EXTERNAL SOURCES:
+  WTTextField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WTTextField: 3a6be762a7ef38d1c6397ec53d5af792a4b1a0d0
+
+PODFILE CHECKSUM: 265cae9c2629721aab06cd28512e5e9bdfa9cf71
+
+COCOAPODS: 1.6.1

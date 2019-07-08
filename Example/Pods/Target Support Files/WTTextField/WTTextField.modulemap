@@ -1,0 +1,6 @@
+framework module WTTextField {
+  umbrella header "WTTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+use_frameworks!
+target 'WTTextField_Tests' do
+  pod 'WTTextField', :path => '../'
+  
+  
+end
