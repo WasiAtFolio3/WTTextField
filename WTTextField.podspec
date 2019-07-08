@@ -23,14 +23,14 @@ TODO: Add long description of the pod here.
 
   s.homepage         = 'https://github.com/WasiAtFolio3/WTTextField.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT', :file => 'WTTextField/LICENSE' }
   s.author           = { 'WasiAtFolio3' => 'hazad@folio3.com' }
   s.source           = { :git => 'https://github.com/WasiAtFolio3/WTTextField.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'WTTextField/Classes/**/*'
+  s.source_files = 'WTTextField/WTTextField/Classes/**/*'
   
   # s.resource_bundles = {
   #   'WTTextField' => ['WTTextField/Assets/*.png']
