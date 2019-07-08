@@ -11,8 +11,6 @@
 		4A18EB130D3D7D7394039B8E9721A454 /* WTTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC990944466863D106D86EFD3103C27 /* WTTextField-dummy.m */; };
 		7037AAAF87E04BDDBD5E7DB7B00D0B25 /* Pods-WTTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC1F814639156CE3B2CC536159F4675 /* Pods-WTTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75B528CB2EA1F30188C9E218C8E32973 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		7F62AE8B22D3ADDF0046D117 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 7F62AE8922D3ADDF0046D117 /* .gitkeep */; };
-		7F62AE8C22D3ADDF0046D117 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 7F62AE8922D3ADDF0046D117 /* .gitkeep */; };
 		7F62AE8D22D3ADDF0046D117 /* WTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62AE8A22D3ADDF0046D117 /* WTTextField.swift */; };
 		7F62AE8E22D3ADDF0046D117 /* WTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F62AE8A22D3ADDF0046D117 /* WTTextField.swift */; };
 		9FE4F0EE50EAB90AA801A18B8591914F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -44,7 +42,6 @@
 		4EC3CDF419F51BF1FA374AC98859BB33 /* WTTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WTTextField-Info.plist"; sourceTree = "<group>"; };
 		569AB591DCBAEFFB69A849FF140556D0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5AC1F814639156CE3B2CC536159F4675 /* Pods-WTTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WTTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7F62AE8922D3ADDF0046D117 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		7F62AE8A22D3ADDF0046D117 /* WTTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTTextField.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0B7C067B91492FA680FAA9A59A673E5 /* Pods_WTTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +103,6 @@
 		7F62AE8822D3ADDF0046D117 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				7F62AE8922D3ADDF0046D117 /* .gitkeep */,
 				7F62AE8A22D3ADDF0046D117 /* WTTextField.swift */,
 			);
 			name = Classes;
@@ -281,7 +277,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F62AE8B22D3ADDF0046D117 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +284,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F62AE8C22D3ADDF0046D117 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
