@@ -5,11 +5,17 @@
 [![License](https://img.shields.io/cocoapods/l/WTTextField.svg?style=flat)](https://cocoapods.org/pods/WTTextField)
 [![Platform](https://img.shields.io/cocoapods/p/WTTextField.svg?style=flat)](https://cocoapods.org/pods/WTTextField)
 
+## Description
+WTTextField is a customizable text field which provides the functionality of both floating placehodler and inline error.
+ - It has so many customizable properties so that you can change it according to your app theme.
+ - you can add your iwn textField in it if you have any default one for your project.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+WTTextField requires iOS 9.0 or later
 
 ## Installation
 
@@ -19,6 +25,9 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'WTTextField'
 ```
+
+## Usage 
+
 
 ## Author
 
