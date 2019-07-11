@@ -29,23 +29,17 @@ enum TextFieldState{
     @IBInspectable var textFieldCornerRadius: CGFloat = 10.0 {didSet{setTextfieldCornerRadius()}}
     @IBInspectable var textFieldBorderWidth: CGFloat = 0.5 { didSet{setBorderWidth()}}
     var errorText: String? = nil{ didSet{ setErrorText() }}
-    var text: String = ""{ get{ return textField.text ?? ""}}
     
     private var state = TextFieldState.idle
     private var errorLabelHeightConstraint: NSLayoutConstraint!
     private var placeholderCenterConstraint: NSLayoutConstraint!
     private var fieldHeightConstraint: NSLayoutConstraint!
     private var allConstraints = [NSLayoutConstraint]()
+    public var text : String? {get {return self.textField.text}}
     
-    var textField = UITextField()
+    private(set) var textField = UITextField()
     private let errorLabel = UILabel()
     private let placeHolderLabel = UILabel()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        configureViews()
-        configureConstraints()
-    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -109,21 +103,22 @@ enum TextFieldState{
         let errorLabelTrailingConstraint = NSLayoutConstraint(item: errorLabel, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1.0, constant: 0.0)
         errorLabelHeightConstraint = errorLabel.heightAnchor.constraint(equalToConstant: self.errorFont.pointSize + 5)
         let errorLabelBottomConstraint = NSLayoutConstraint(item: errorLabel, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1.0, constant: 0.0)
-
+        
         // place holder label
         placeholderCenterConstraint = NSLayoutConstraint(item: placeHolderLabel, attribute: .centerY, relatedBy: .equal, toItem: textField, attribute: .centerY, multiplier: 1.0, constant: 0.0)
         let placeholderLeftConstraint = NSLayoutConstraint(item: placeHolderLabel, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1.0, constant: 10.0)
         
-        let fieldConstraints = [fieldTopConstraint, fieldLeadingConstraint,
-                           fieldTrailingConstraint]
-        let errorLabelConstraints = [errorLabelLeadingConstraint, errorLabelTrailingConstraint,
-                            errorLabelBottomConstraint]
-        let placeholderLabelConstraints = [placeholderLeftConstraint, placeholderCenterConstraint]
-
-        allConstraints = fieldConstraints + errorLabelConstraints + placeholderLabelConstraints as! [NSLayoutConstraint]
+        let fieldConstraints : [NSLayoutConstraint] = [fieldTopConstraint, fieldLeadingConstraint,
+                                                       fieldTrailingConstraint]
+        let errorLabelConstraints : [NSLayoutConstraint] = [errorLabelLeadingConstraint, errorLabelTrailingConstraint,
+                                                            errorLabelBottomConstraint]
+        let placeholderLabelConstraints : [NSLayoutConstraint] = [placeholderLeftConstraint, placeholderCenterConstraint]
+        
+        allConstraints = fieldConstraints + errorLabelConstraints
+        allConstraints += placeholderLabelConstraints
         NSLayoutConstraint.activate(allConstraints)
         self.addConstraints(allConstraints)
-
+        
         errorLabelHeightConstraint.isActive = true
         fieldHeightConstraint.isActive = true
         errorLabel.addConstraint(errorLabelHeightConstraint)
@@ -212,18 +207,19 @@ enum TextFieldState{
         }
     }
     
-    func setText(_ text: String){
+    func setText(_ text: String?){
         // if text field is in idle state and text is not empty
         //OR
         // text is empty and field is in float state
         // then change the state of the field.
-        if (self.state == .idle && !text.isEmpty)
-            || (self.state == .float && text.isEmpty){
+        let _text = text ?? ""
+        if (self.state == .idle && !_text.isEmpty)
+            || (self.state == .float && _text.isEmpty){
             changeState()
-            self.textField.text = text
+            self.textField.text = _text
         }
     }
-
+    
     
     override func resignFirstResponder() -> Bool {
         textField.resignFirstResponder()
@@ -239,7 +235,7 @@ enum TextFieldState{
     private func setTextColor(_ color: UIColor){
         self.textField.textColor = color
     }
-
+    
     private func setPlaceholderColor(_ color: UIColor){
         self.placeHolderLabel.textColor = color
     }
