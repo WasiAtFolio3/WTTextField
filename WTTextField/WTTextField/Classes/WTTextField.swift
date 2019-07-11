@@ -15,7 +15,7 @@ enum TextFieldState{
 
 @IBDesignable open class WTTextField: UIView {
     
-    @IBInspectable public var placeHolder: String = "Placeholder :)" { didSet { setPlaceHolder(self.placeHolder) }}
+    @IBInspectable public var placeHolder: String = "" { didSet { setPlaceHolder(self.placeHolder) }}
     @IBInspectable public var textColor: UIColor = UIColor.black { didSet { setTextColor(self.textColor)}}
     @IBInspectable public var placeHolderColor: UIColor = UIColor.lightGray { didSet { setPlaceholderColor(self.placeHolderColor)}}
     @IBInspectable public var animationDuration: Double = 0.25 { didSet {} }
