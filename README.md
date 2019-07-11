@@ -38,6 +38,7 @@ Or you can simply initialize the WTTextField instance by initWithFrame initializ
      
 ## Customization
 You can customize following properties of WTTextField:
+
     - placeHolder 
     - placeHolderColor
     - placeHolderFont
