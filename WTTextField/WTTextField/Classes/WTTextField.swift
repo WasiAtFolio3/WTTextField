@@ -37,7 +37,7 @@ enum TextFieldState{
     private var allConstraints = [NSLayoutConstraint]()
     public var text : String? {get {return self.textField.text}}
     
-    private(set) var textField = UITextField()
+    public var textField = UITextField()
     private let errorLabel = UILabel()
     private let placeHolderLabel = UILabel()
     
