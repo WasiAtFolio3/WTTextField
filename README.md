@@ -6,7 +6,7 @@
 ## Description
 WTTextField is a customizable text field which provides the functionality of both floating placehodler and inline error.
  - It has so many customizable properties so that you can change it according to your app theme.
- - you can add your iwn textField in it if you have any default one for your project.
+ - you can add your own textField in it if you have any default one for your project.
 
 ![demo-video](https://github.com/WasiAtFolio3/WTTextField/blob/master/WTTextField-demo.gif)
 
