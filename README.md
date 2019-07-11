@@ -35,7 +35,40 @@ Or you can simply initialize the WTTextField instance by initWithFrame initializ
         let customTextfield = WTTextField(frame: .zero)
         self.view.addSubview(customTextfield)
         
-        
+     
+## Customization
+You can customize following properties of WTTextField:
+    - placeHolder 
+    - placeHolderColor
+    - placeHolderFont
+    - placeHolderFloatFont
+    - textColor
+    - textFieldFont
+    - textFieldBackgroundColor
+    - TextFieldBorderwidth
+    - errorText
+    - errorFont
+    - errorColor
+    - animationDuration
+
+## Setting the Error
+To set the textfield in showing error state , you just have to set the errorText property, and it will let textfield to show the error. yes its that simple :)
+```
+  customTextfield.errorText = "Invalid Email"
+```
+ to hide the error , just set the same property to nil
+ 
+ ```
+ customTextfield.errorText = nil
+ ```
+
+## Have your own project TextField?
+Have your own custom textfield of the project? No Problem , you can add your custom TextField to WTTextField to extend your textfield's fuctionality to showing floating placeholder and inline error.
+```
+customTextfield.setTextfield(yourProjectTextField)
+```
+That's all for now.
+Happy Coding :)
 
 ## Author
 
