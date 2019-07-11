@@ -13,7 +13,7 @@ enum TextFieldState{
     case float
 }
 
-@IBDesignable public class WTTextField: UIView {
+@IBDesignable open class WTTextField: UIView {
     
     @IBInspectable var placeHolder: String = "Placeholder :)" { didSet { setPlaceHolder(self.placeHolder) }}
     @IBInspectable var textColor: UIColor = UIColor.black { didSet { setTextColor(self.textColor)}}
@@ -41,13 +41,13 @@ enum TextFieldState{
     private let errorLabel = UILabel()
     private let placeHolderLabel = UILabel()
     
-    override init(frame: CGRect) {
+    override open init(frame: CGRect) {
         super.init(frame: frame)
         configureViews()
         configureConstraints()
     }
     
-     required init?(coder aDecoder: NSCoder) {
+     required open init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.isUserInteractionEnabled = true
         configureViews()
