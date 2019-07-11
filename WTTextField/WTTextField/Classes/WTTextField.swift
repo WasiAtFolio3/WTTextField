@@ -41,20 +41,20 @@ enum TextFieldState{
     private let errorLabel = UILabel()
     private let placeHolderLabel = UILabel()
     
-    override open init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         configureViews()
         configureConstraints()
     }
     
-     required open init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.isUserInteractionEnabled = true
         configureViews()
         configureConstraints()
     }
     
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
         fieldHeightConstraint.constant = self.bounds.height - (self.errorFont.pointSize + 5)
     }
@@ -227,7 +227,7 @@ enum TextFieldState{
     }
     
     
-    override public func resignFirstResponder() -> Bool {
+    override open func resignFirstResponder() -> Bool {
         textField.resignFirstResponder()
         textFieldDidEndEditing()
         return super.resignFirstResponder()
