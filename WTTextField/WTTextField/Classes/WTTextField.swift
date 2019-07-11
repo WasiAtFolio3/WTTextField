@@ -13,7 +13,7 @@ enum TextFieldState{
     case float
 }
 
-@IBDesignable class WTTextField: UIView {
+@IBDesignable open class WTTextField: UIView {
     
     @IBInspectable var placeHolder: String = "Placeholder :)" { didSet { setPlaceHolder(self.placeHolder) }}
     @IBInspectable var textColor: UIColor = UIColor.black { didSet { setTextColor(self.textColor)}}
