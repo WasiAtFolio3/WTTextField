@@ -15,20 +15,20 @@ enum TextFieldState{
 
 @IBDesignable open class WTTextField: UIView {
     
-    @IBInspectable var placeHolder: String = "Placeholder :)" { didSet { setPlaceHolder(self.placeHolder) }}
-    @IBInspectable var textColor: UIColor = UIColor.black { didSet { setTextColor(self.textColor)}}
-    @IBInspectable var placeHolderColor: UIColor = UIColor.lightGray { didSet { setPlaceholderColor(self.placeHolderColor)}}
-    @IBInspectable var animationDuration: Double = 0.25 { didSet {} }
-    @IBInspectable var textFieldFont: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize) { didSet{setTextFieldFont(self.textFieldFont)}}
-    @IBInspectable var placeholderFont: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize){ didSet{ setPlaceholderFont(self.placeholderFont)}}
-    @IBInspectable var errorColor: UIColor = UIColor.red {didSet { setErrorColor(errorColor)}}
-    @IBInspectable var errorFont: UIFont = UIFont.systemFont(ofSize: 12) { didSet{ setErrorFont(self.errorFont)}}
-    @IBInspectable var textFieldBorderColor: UIColor = UIColor.lightGray { didSet{ setTextFieldBorderColor(self.textFieldBorderColor)}}
-    @IBInspectable var PlaceHolderFloatFont: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize - 3)
-    @IBInspectable var textFieldBackgroundColor: UIColor = UIColor(red: 243/255, green: 244/255, blue: 247/255, alpha: 1.0){didSet {setTextFieldBackgroundColor()}}
-    @IBInspectable var textFieldCornerRadius: CGFloat = 10.0 {didSet{setTextfieldCornerRadius()}}
-    @IBInspectable var textFieldBorderWidth: CGFloat = 0.5 { didSet{setBorderWidth()}}
-    var errorText: String? = nil{ didSet{ setErrorText() }}
+    @IBInspectable public var placeHolder: String = "Placeholder :)" { didSet { setPlaceHolder(self.placeHolder) }}
+    @IBInspectable public var textColor: UIColor = UIColor.black { didSet { setTextColor(self.textColor)}}
+    @IBInspectable public var placeHolderColor: UIColor = UIColor.lightGray { didSet { setPlaceholderColor(self.placeHolderColor)}}
+    @IBInspectable public var animationDuration: Double = 0.25 { didSet {} }
+    @IBInspectable public var textFieldFont: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize) { didSet{setTextFieldFont(self.textFieldFont)}}
+    @IBInspectable public var placeholderFont: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize){ didSet{ setPlaceholderFont(self.placeholderFont)}}
+    @IBInspectable public var errorColor: UIColor = UIColor.red {didSet { setErrorColor(errorColor)}}
+    @IBInspectable public var errorFont: UIFont = UIFont.systemFont(ofSize: 12) { didSet{ setErrorFont(self.errorFont)}}
+    @IBInspectable public var textFieldBorderColor: UIColor = UIColor.lightGray { didSet{ setTextFieldBorderColor(self.textFieldBorderColor)}}
+    @IBInspectable public var PlaceHolderFloatFont: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize - 3)
+    @IBInspectable public var textFieldBackgroundColor: UIColor = UIColor(red: 243/255, green: 244/255, blue: 247/255, alpha: 1.0){didSet {setTextFieldBackgroundColor()}}
+    @IBInspectable public var textFieldCornerRadius: CGFloat = 10.0 {didSet{setTextfieldCornerRadius()}}
+    @IBInspectable public var textFieldBorderWidth: CGFloat = 0.5 { didSet{setBorderWidth()}}
+    public var errorText: String? = nil{ didSet{ setErrorText() }}
     
     private var state = TextFieldState.idle
     private var errorLabelHeightConstraint: NSLayoutConstraint!
