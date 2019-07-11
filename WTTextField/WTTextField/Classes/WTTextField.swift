@@ -201,7 +201,7 @@ enum TextFieldState{
     }
     
     //MARK:- Public methods
-    func setTextfield(_ withTextField: UITextField){
+    public func setTextfield(_ withTextField: UITextField){
         textField.removeFromSuperview()
         self.textField = withTextField
         self.removeConstraints(allConstraints)
@@ -213,7 +213,7 @@ enum TextFieldState{
         }
     }
     
-    func setText(_ text: String?){
+    public func setText(_ text: String?){
         // if text field is in idle state and text is not empty
         //OR
         // text is empty and field is in float state
