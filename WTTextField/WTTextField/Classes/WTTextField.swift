@@ -13,7 +13,7 @@ enum TextFieldState{
     case float
 }
 
-@IBDesignable open class WTTextField: UIView {
+@IBDesignable public class WTTextField: UIView {
     
     @IBInspectable var placeHolder: String = "Placeholder :)" { didSet { setPlaceHolder(self.placeHolder) }}
     @IBInspectable var textColor: UIColor = UIColor.black { didSet { setTextColor(self.textColor)}}
@@ -41,14 +41,20 @@ enum TextFieldState{
     private let errorLabel = UILabel()
     private let placeHolderLabel = UILabel()
     
-    required public init?(coder aDecoder: NSCoder) {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configureViews()
+        configureConstraints()
+    }
+    
+     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.isUserInteractionEnabled = true
         configureViews()
         configureConstraints()
     }
     
-    override open func layoutSubviews() {
+    override func layoutSubviews() {
         super.layoutSubviews()
         fieldHeightConstraint.constant = self.bounds.height - (self.errorFont.pointSize + 5)
     }
@@ -221,7 +227,7 @@ enum TextFieldState{
     }
     
     
-    override open func resignFirstResponder() -> Bool {
+    override public func resignFirstResponder() -> Bool {
         textField.resignFirstResponder()
         textFieldDidEndEditing()
         return super.resignFirstResponder()

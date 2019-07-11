@@ -1,5 +1,5 @@
 PODS:
-  - WTTextField (1.0.0)
+  - WTTextField (1.0.3)
 
 DEPENDENCIES:
   - WTTextField (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WTTextField: d1dad444ebd5790d87abaadf39729374c965e037
+  WTTextField: 107fa78dc35e9dd884196ff7423ea95e90b98759
 
 PODFILE CHECKSUM: 265cae9c2629721aab06cd28512e5e9bdfa9cf71
 

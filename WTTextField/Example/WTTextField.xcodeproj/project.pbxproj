@@ -143,7 +143,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				A345A1F0107D21B4CE016B18 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,28 +234,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A345A1F0107D21B4CE016B18 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WTTextField_Tests/Pods-WTTextField_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/WTTextField/WTTextField.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WTTextField.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WTTextField_Tests/Pods-WTTextField_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F656433B28A200EDD74792B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

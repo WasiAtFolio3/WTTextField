@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "86DF64A340CD3C8632EF9AA34AE5F7DD"
-               BuildableName = "WTTextField.framework"
+               BuildableName = "WTTextField"
                BlueprintName = "WTTextField"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
