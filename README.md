@@ -1,8 +1,6 @@
 # WTTextField
 
-[![CI Status](https://img.shields.io/travis/WasiAtFolio3/WTTextField.svg?style=flat)](https://travis-ci.org/WasiAtFolio3/WTTextField)
 [![Version](https://img.shields.io/cocoapods/v/WTTextField.svg?style=flat)](https://cocoapods.org/pods/WTTextField)
-[![License](https://img.shields.io/cocoapods/l/WTTextField.svg?style=flat)](https://cocoapods.org/pods/WTTextField)
 [![Platform](https://img.shields.io/cocoapods/p/WTTextField.svg?style=flat)](https://cocoapods.org/pods/WTTextField)
 
 ## Description
@@ -27,7 +25,15 @@ pod 'WTTextField'
 ```
 
 ## Usage 
+You can add WTTextField through your storyboard by subclassing your View and edit its properties right through from storyboard.
 
+
+Or you can simply initialize the WTTextField instance by initWithFrame initializer:
+        
+        let customTextfield = WTTextField(frame: .zero)
+        self.view.addSubview(customTextfield)
+        
+        
 
 ## Author
 
