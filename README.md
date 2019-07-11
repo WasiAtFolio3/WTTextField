@@ -22,7 +22,7 @@ pod 'WTTextField'
 
 ## Author
 
-WasiAtFolio3, hazad@folio3.com
+WasiAtFolio3, mwasi@folio3.com
 
 ## License
 
