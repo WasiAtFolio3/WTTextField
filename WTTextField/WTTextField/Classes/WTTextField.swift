@@ -29,6 +29,7 @@ enum TextFieldState{
     @IBInspectable var textFieldCornerRadius: CGFloat = 10.0 {didSet{setTextfieldCornerRadius()}}
     @IBInspectable var textFieldBorderWidth: CGFloat = 0.5 { didSet{setBorderWidth()}}
     var errorText: String? = nil{ didSet{ setErrorText() }}
+    var text: String = ""{ get{ return textField.text ?? ""}}
     
     private var state = TextFieldState.idle
     private var errorLabelHeightConstraint: NSLayoutConstraint!
@@ -36,9 +37,15 @@ enum TextFieldState{
     private var fieldHeightConstraint: NSLayoutConstraint!
     private var allConstraints = [NSLayoutConstraint]()
     
-    private var textField = UITextField()
+    var textField = UITextField()
     private let errorLabel = UILabel()
     private let placeHolderLabel = UILabel()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configureViews()
+        configureConstraints()
+    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
