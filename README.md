@@ -8,6 +8,8 @@ WTTextField is a customizable text field which provides the functionality of bot
  - It has so many customizable properties so that you can change it according to your app theme.
  - you can add your iwn textField in it if you have any default one for your project.
 
+![demo-video](https://github.com/WasiAtFolio3/WTTextField/blob/master/WTTextField-demo.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -26,7 +28,7 @@ pod 'WTTextField'
 
 ## Usage 
 You can add WTTextField through your storyboard by subclassing your View and edit its properties right through from storyboard.
-
+![Adding-from-storyboard](https://github.com/WasiAtFolio3/WTTextField/blob/master/adding-from-storyboard.png)
 
 Or you can simply initialize the WTTextField instance by initWithFrame initializer:
         
