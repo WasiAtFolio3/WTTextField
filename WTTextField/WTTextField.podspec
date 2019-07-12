@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WTTextField'
-  s.version          = '1.0.10'
+  s.version          = '1.0.11'
   s.summary          = 'A customizable custom TextField view with floating placeholder and inline error feature.'
 
 # This description is used to generate tags and improve search results.
