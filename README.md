@@ -57,7 +57,7 @@ To set the textfield in showing error state , you just have to set the errorText
 ```
   customTextfield.errorText = "Invalid Email"
 ```
- to hide the error , just set the same property to nil
+ to hide the error , just set the same property to nil.
  
  ```
  customTextfield.errorText = nil
