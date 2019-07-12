@@ -24,7 +24,7 @@ enum TextFieldState{
     @IBInspectable public var errorColor: UIColor = UIColor.red {didSet { setErrorColor(errorColor)}}
     @IBInspectable public var errorFont: UIFont = UIFont.systemFont(ofSize: 12) { didSet{ setErrorFont(self.errorFont)}}
     @IBInspectable public var textFieldBorderColor: UIColor = UIColor.lightGray { didSet{ setTextFieldBorderColor(self.textFieldBorderColor)}}
-    @IBInspectable public var PlaceHolderFloatFont: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize - 3)
+    @IBInspectable public var PlaceHolderFloatFont: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize - 3) { didSet { setPlaceHolderFloatFont(self.PlaceHolderFloatFont)}}
     @IBInspectable public var textFieldBackgroundColor: UIColor = UIColor(red: 243/255, green: 244/255, blue: 247/255, alpha: 1.0){didSet {setTextFieldBackgroundColor()}}
     @IBInspectable public var textFieldCornerRadius: CGFloat = 10.0 {didSet{setTextfieldCornerRadius()}}
     @IBInspectable public var textFieldBorderWidth: CGFloat = 0.5 { didSet{setBorderWidth()}}
@@ -252,7 +252,15 @@ enum TextFieldState{
     }
     
     private func setPlaceholderFont(_ font: UIFont){
-        self.placeHolderLabel.font = font
+        if self.state == .idle{
+            self.placeHolderLabel.font = font
+        }
+    }
+    
+    private func setPlaceHolderFloatFont(_ font: UIFont){
+        if self.state == .float{
+            self.placeHolderLabel.font = font
+        }
     }
     
     private func setErrorColor(_ color: UIColor){
