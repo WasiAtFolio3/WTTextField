@@ -222,8 +222,8 @@ enum TextFieldState{
         if (self.state == .idle && !_text.isEmpty)
             || (self.state == .float && _text.isEmpty){
             changeState()
-            self.textField.text = _text
         }
+        self.textField.text = _text
     }
     
     
