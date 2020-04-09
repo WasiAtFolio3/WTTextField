@@ -16,7 +16,7 @@ enum TextFieldState{
 public class WTCuStomField: UITextField{
     var clearButtonBounds: CGRect?
     
-    override func clearButtonRect(forBounds bounds: CGRect) -> CGRect {
+    override open func clearButtonRect(forBounds bounds: CGRect) -> CGRect {
         if let customBounds = self.clearButtonBounds{
             return customBounds
         }
