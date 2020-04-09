@@ -13,7 +13,7 @@ enum TextFieldState{
     case float
 }
 
-class WTCuStomField: UITextField{
+public class WTCuStomField: UITextField{
     var clearButtonBounds: CGRect?
     
     override func clearButtonRect(forBounds bounds: CGRect) -> CGRect {
@@ -216,17 +216,17 @@ class WTCuStomField: UITextField{
     }
     
     //MARK:- Public methods
-    public func setTextfield(_ withTextField: UITextField){
-        textField.removeFromSuperview()
-        self.textField = withTextField
-        self.removeConstraints(allConstraints)
-        configureConstraints()
-        addTargets()
-        
-        if let text = withTextField.text, !text.isEmpty{
-            changeToFloat()
-        }
-    }
+//    public func setTextfield(_ withTextField: UITextField){
+//        textField.removeFromSuperview()
+//        self.textField = withTextField
+//        self.removeConstraints(allConstraints)
+//        configureConstraints()
+//        addTargets()
+//        
+//        if let text = withTextField.text, !text.isEmpty{
+//            changeToFloat()
+//        }
+//    }
     
     public func setText(_ text: String?){
         // if text field is in idle state and text is not empty
