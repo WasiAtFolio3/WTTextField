@@ -13,6 +13,17 @@ enum TextFieldState{
     case float
 }
 
+class WTCuStomField: UITextField{
+    var clearButtonBounds: CGRect?
+    
+    override func clearButtonRect(forBounds bounds: CGRect) -> CGRect {
+        if let customBounds = self.clearButtonBounds{
+            return customBounds
+        }
+        return bounds
+    }
+}
+
 @IBDesignable open class WTTextField: UIView {
     
     @IBInspectable public var placeHolder: String = "" { didSet { setPlaceHolder(self.placeHolder) }}
@@ -29,6 +40,7 @@ enum TextFieldState{
     @IBInspectable public var textFieldCornerRadius: CGFloat = 10.0 {didSet{setTextfieldCornerRadius()}}
     @IBInspectable public var textFieldBorderWidth: CGFloat = 0.5 { didSet{setBorderWidth()}}
     public var errorText: String? = nil{ didSet{ setErrorText() }}
+    public var clearButtonBounds: CGRect?
     
     private var state = TextFieldState.idle
     private var errorLabelHeightConstraint: NSLayoutConstraint!
@@ -37,7 +49,7 @@ enum TextFieldState{
     private var allConstraints = [NSLayoutConstraint]()
     public var text : String? {get {return self.textField.text}}
     
-    public var textField = UITextField()
+    public var textField = WTCuStomField()
     private let errorLabel = UILabel()
     private let placeHolderLabel = UILabel()
     
@@ -70,6 +82,9 @@ enum TextFieldState{
         textField.borderStyle = .none
         textField.backgroundColor = self.textFieldBackgroundColor
         textField.layer.cornerRadius = self.textFieldCornerRadius
+        if let bounds = self.clearButtonBounds{
+            textField.clearButtonBounds = bounds
+        }
         configureFieldLeftView()
         addTargets()
         // placeholder label
