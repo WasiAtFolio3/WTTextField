@@ -34,7 +34,7 @@ public class WTCuStomField: UITextField{
     @IBInspectable public var placeholderFont: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize){ didSet{ setPlaceholderFont(self.placeholderFont)}}
     @IBInspectable public var errorColor: UIColor = UIColor.red {didSet { setErrorColor(errorColor)}}
     @IBInspectable public var errorFont: UIFont = UIFont.systemFont(ofSize: 12) { didSet{ setErrorFont(self.errorFont)}}
-    @IBInspectable public var textFieldBorderColor: UIColor = UIColor.lightGray { didSet{ setTextFieldBorderColor(self.textFieldBorderColor)}}
+    @IBInspectable public var textFieldBorderColor: UIColor = UIColor.clear { didSet{ setTextFieldBorderColor(self.textFieldBorderColor)}}
     @IBInspectable public var PlaceHolderFloatFont: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize - 3) { didSet { setPlaceHolderFloatFont(self.PlaceHolderFloatFont)}}
     @IBInspectable public var textFieldBackgroundColor: UIColor = UIColor(red: 243/255, green: 244/255, blue: 247/255, alpha: 1.0){didSet {setTextFieldBackgroundColor()}}
     @IBInspectable public var textFieldCornerRadius: CGFloat = 10.0 {didSet{setTextfieldCornerRadius()}}
@@ -211,7 +211,6 @@ public class WTCuStomField: UITextField{
     
     private func hideError(){
         self.errorLabel.text = ""
-        self.textField.layer.borderWidth = 0.0
         self.textField.layer.borderColor = textFieldBorderColor.cgColor
     }
     
