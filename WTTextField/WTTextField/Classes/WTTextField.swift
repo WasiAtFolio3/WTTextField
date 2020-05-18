@@ -237,6 +237,11 @@ public class WTCuStomField: UITextField{
             || (self.state == .float && _text.isEmpty){
             changeState()
         }
+        
+        if (_text.isEmpty == false){
+            self.hideError()
+        }
+        
         self.textField.text = _text
     }
     
