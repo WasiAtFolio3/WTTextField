@@ -38,7 +38,8 @@ public class WTCuStomField: UITextField{
     @IBInspectable public var PlaceHolderFloatFont: UIFont = UIFont.systemFont(ofSize: UIFont.systemFontSize - 3) { didSet { setPlaceHolderFloatFont(self.PlaceHolderFloatFont)}}
     @IBInspectable public var textFieldBackgroundColor: UIColor = UIColor(red: 243/255, green: 244/255, blue: 247/255, alpha: 1.0){didSet {setTextFieldBackgroundColor()}}
     @IBInspectable public var textFieldCornerRadius: CGFloat = 10.0 {didSet{setTextfieldCornerRadius()}}
-    @IBInspectable public var textFieldBorderWidth: CGFloat = 0.5 { didSet{setBorderWidth()}}
+    @IBInspectable public var textFieldBorderWidth: CGFloat = 1.0 { didSet{setBorderWidth()}}
+    @IBInspectable public var textFieldErrorBorderWidth: CGFloat = 1.0 { didSet {setErrorBorderWidth()}}
     public var errorText: String? = nil{ didSet{ setErrorText() }}
     public var clearButtonBounds: CGRect?
     
@@ -205,13 +206,14 @@ public class WTCuStomField: UITextField{
     
     private func showError(error: String){
         self.errorLabel.text = error
-        self.textField.layer.borderWidth = textFieldBorderWidth
+        self.textField.layer.borderWidth = textFieldErrorBorderWidth
         self.textField.layer.borderColor = errorColor.cgColor
     }
     
     private func hideError(){
         self.errorLabel.text = ""
         self.textField.layer.borderColor = textFieldBorderColor.cgColor
+        self.textField.layer.borderWidth = textFieldBorderWidth
     }
     
     //MARK:- Public methods
@@ -221,7 +223,7 @@ public class WTCuStomField: UITextField{
 //        self.removeConstraints(allConstraints)
 //        configureConstraints()
 //        addTargets()
-//        
+//
 //        if let text = withTextField.text, !text.isEmpty{
 //            changeToFloat()
 //        }
@@ -312,8 +314,12 @@ public class WTCuStomField: UITextField{
     }
     
     private func setBorderWidth(){
+        textField.layer.borderWidth = textFieldBorderWidth
+    }
+    
+    private func setErrorBorderWidth(){
         if let _ = errorText{
-            textField.layer.borderWidth = textFieldBorderWidth
+            textField.layer.borderWidth = textFieldErrorBorderWidth
         }
     }
 }
